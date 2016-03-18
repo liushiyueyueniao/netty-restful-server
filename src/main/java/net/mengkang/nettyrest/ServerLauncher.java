@@ -1,4 +1,4 @@
-package net.mengkang.demo;
+package net.mengkang.nettyrest;
 
 import net.mengkang.nettyrest.netty.NettyRestServer;
 
