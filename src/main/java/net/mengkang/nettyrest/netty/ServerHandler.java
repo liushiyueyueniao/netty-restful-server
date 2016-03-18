@@ -20,7 +20,7 @@ import io.netty.handler.codec.http.FullHttpResponse;
 import io.netty.handler.codec.http.HttpHeaderUtil;
 import io.netty.handler.codec.http.HttpHeaderValues;
 import io.netty.handler.codec.http.HttpRequest;
-import net.mengkang.nettyrest.ApiHandler;
+import net.mengkang.nettyrest.http.ApiHandler;
 
 public class ServerHandler extends ChannelHandlerAdapter {
 	private final Logger logger = LoggerFactory.getLogger(ServerHandler.class);
