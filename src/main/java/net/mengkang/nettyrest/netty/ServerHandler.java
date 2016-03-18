@@ -7,8 +7,6 @@ import static io.netty.handler.codec.http.HttpResponseStatus.CONTINUE;
 import static io.netty.handler.codec.http.HttpResponseStatus.OK;
 import static io.netty.handler.codec.http.HttpVersion.HTTP_1_1;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import io.netty.buffer.Unpooled;
 import io.netty.channel.ChannelFutureListener;
@@ -23,7 +21,6 @@ import io.netty.handler.codec.http.HttpRequest;
 import net.mengkang.nettyrest.http.ApiHandler;
 
 public class ServerHandler extends ChannelHandlerAdapter {
-	private final Logger logger = LoggerFactory.getLogger(ServerHandler.class);
 
 	@Override
 	public void channelReadComplete(ChannelHandlerContext ctx) {
@@ -60,7 +57,6 @@ public class ServerHandler extends ChannelHandlerAdapter {
 	public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause) {
 		cause.printStackTrace();
 		ctx.close();
-		logger.error("ctx close!");
 	}
 
 }
